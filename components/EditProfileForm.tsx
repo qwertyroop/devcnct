@@ -112,11 +112,7 @@ const EditProfileForm = ({ user, username }: { user: PortfolioType; username: st
           <h2 className="text-2xl font-bold">Basic Information</h2>
         </CardHeader>
         <CardBody className="space-y-4">
-          <Input
-            label="Username"
-            value={formData.username}
-            onChange={(e) => setFormData({ ...formData, username: e.target.value })}
-          />
+          
           <Input
             label="Email"
             type="email"

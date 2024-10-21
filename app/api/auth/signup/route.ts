@@ -91,7 +91,7 @@ async function handleStep2(email: string, otp: number) {
 async function handleStep3(email: string, username: string) {
   const existingUsername = await PortfolioModel.findOne({ username });
   if (existingUsername) {
-    return NextResponse.json({ message: 'Username is already taken' }, { status: 400 });
+    return NextResponse.json({ message: 'Username is Unavailable' }, { status: 400 });
   }
 
   const tempUser = tempUsers.get(email);

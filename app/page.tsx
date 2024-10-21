@@ -30,9 +30,9 @@ export default function Home() {
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.docs}
+          href="/register"
         >
-          Documentation
+          Register
         </Link>
         <Link
           isExternal
